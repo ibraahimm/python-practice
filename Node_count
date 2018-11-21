@@ -1,3 +1,5 @@
+# first way:
+
 class Node():
     def __inint__(self, value, next):
         self.data = value
@@ -22,4 +24,39 @@ def count_node(first)
         
  
 count_node(head)
+
+
+# second way :
+
+class Node():
+    def __inint__(self, value):
+        self.data = value
+        self.next = 0
+        
+    def next_value(self):
+        return self.next
+        
+node5 = Node(10)
+node4 = Node(5)
+node3 = Node(1)
+node2 = Node(9)
+head  = Node(6)
+
+head.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+
+def count_node(first)
+    current = first
+    counter = 0
+    while current:
+        counter +=1
+        current = current.next_value()
+        print(counter)
+        
+ 
+count_node(head)
+
+
     
