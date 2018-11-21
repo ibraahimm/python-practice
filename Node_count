@@ -1,5 +1,7 @@
 # first way:
 
+import sys
+
 class Node():
     def __inint__(self, value, next):
         self.data = value
